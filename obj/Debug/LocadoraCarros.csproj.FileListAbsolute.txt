@@ -1,0 +1,12 @@
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.exe.config
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.exe
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\bin\Debug\LocadoraCarros.pdb
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csproj.AssemblyReference.cache
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csproj.SuggestedBindingRedirects.cache
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Properties.Resources.resources
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Telinhas.Historico.resources
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.Login.resources
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csproj.GenerateResource.cache
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.csproj.CoreCompileInputs.cache
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.exe
+C:\Users\thici\OneDrive\Documentos\IFRO\codigos\POO- LocadoraCarros\LocadoraCarros\obj\Debug\LocadoraCarros.pdb

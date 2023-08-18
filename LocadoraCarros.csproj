@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Telinhas\Alugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telinhas\Alugar.Designer.cs">
+      <DependentUpon>Alugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telinhas\Historico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telinhas\Historico.Designer.cs">
+      <DependentUpon>Historico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telinhas\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telinhas\Alugar.resx">
+      <DependentUpon>Alugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telinhas\Historico.resx">
+      <DependentUpon>Historico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telinhas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
