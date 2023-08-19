@@ -16,5 +16,30 @@ namespace LocadoraCarros.Telinhas
         {
             InitializeComponent();
         }
+
+        private void lb_devolucao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_usuarioHis_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

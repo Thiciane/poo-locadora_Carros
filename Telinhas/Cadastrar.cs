@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace LocadoraCarros.Telinhas
 {
-    public partial class Historico : Form
+    public partial class Cadastrar : Form
     {
-        public Historico()
+        public Cadastrar()
         {
             InitializeComponent();
         }
 
-        private void Historico_Load(object sender, EventArgs e)
+        private void lb_marca_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lb_usuarioHis_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cadastrar_Load(object sender, EventArgs e)
         {
 
         }

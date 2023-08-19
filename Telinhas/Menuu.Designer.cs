@@ -1,6 +1,6 @@
 ﻿namespace LocadoraCarros.Telinhas
 {
-    partial class Historico
+    partial class Menuu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Historico));
-            this.lb_historico = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_sairHis = new System.Windows.Forms.Label();
             this.lb_usuarioHis = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lb_menu = new System.Windows.Forms.Label();
+            this.bt_alugar = new System.Windows.Forms.Button();
+            this.bt_historico = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lb_historico
-            // 
-            this.lb_historico.AutoSize = true;
-            this.lb_historico.BackColor = System.Drawing.Color.Transparent;
-            this.lb_historico.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.lb_historico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_historico.ForeColor = System.Drawing.Color.Black;
-            this.lb_historico.Location = new System.Drawing.Point(6, 141);
-            this.lb_historico.Name = "lb_historico";
-            this.lb_historico.Size = new System.Drawing.Size(134, 32);
-            this.lb_historico.TabIndex = 0;
-            this.lb_historico.Text = "Histórico";
             // 
             // panel1
             // 
@@ -62,10 +47,10 @@
             this.panel1.Controls.Add(this.lb_usuarioHis);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-1, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(803, 82);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 5;
             // 
             // lb_sairHis
             // 
@@ -90,7 +75,6 @@
             this.lb_usuarioHis.Size = new System.Drawing.Size(70, 18);
             this.lb_usuarioHis.TabIndex = 2;
             this.lb_usuarioHis.Text = "Usuario";
-            this.lb_usuarioHis.Click += new System.EventHandler(this.lb_usuarioHis_Click);
             // 
             // pictureBox1
             // 
@@ -102,45 +86,58 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // lb_menu
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 191);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 215);
-            this.dataGridView1.TabIndex = 2;
+            this.lb_menu.AutoSize = true;
+            this.lb_menu.BackColor = System.Drawing.Color.Transparent;
+            this.lb_menu.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.lb_menu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_menu.ForeColor = System.Drawing.Color.Black;
+            this.lb_menu.Location = new System.Drawing.Point(5, 143);
+            this.lb_menu.Name = "lb_menu";
+            this.lb_menu.Size = new System.Drawing.Size(84, 32);
+            this.lb_menu.TabIndex = 4;
+            this.lb_menu.Text = "Menu";
+            this.lb_menu.Click += new System.EventHandler(this.lb_menu_Click);
             // 
-            // pictureBox2
+            // bt_alugar
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 412);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 34);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.bt_alugar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_alugar.Location = new System.Drawing.Point(196, 254);
+            this.bt_alugar.Name = "bt_alugar";
+            this.bt_alugar.Size = new System.Drawing.Size(170, 112);
+            this.bt_alugar.TabIndex = 4;
+            this.bt_alugar.Text = "Alugar";
+            this.bt_alugar.UseVisualStyleBackColor = true;
+            this.bt_alugar.Click += new System.EventHandler(this.bt_alugar_Click);
             // 
-            // Historico
+            // bt_historico
+            // 
+            this.bt_historico.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_historico.Location = new System.Drawing.Point(406, 254);
+            this.bt_historico.Name = "bt_historico";
+            this.bt_historico.Size = new System.Drawing.Size(170, 112);
+            this.bt_historico.TabIndex = 6;
+            this.bt_historico.Text = "Histórico";
+            this.bt_historico.UseVisualStyleBackColor = true;
+            this.bt_historico.Click += new System.EventHandler(this.bt_historico_Click);
+            // 
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.bt_historico);
+            this.Controls.Add(this.bt_alugar);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lb_historico);
-            this.Name = "Historico";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "Historico";
-            this.Load += new System.EventHandler(this.Historico_Load);
+            this.Controls.Add(this.lb_menu);
+            this.Name = "Menu";
+            this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,12 +145,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lb_historico;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lb_sairHis;
         private System.Windows.Forms.Label lb_usuarioHis;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lb_sairHis;
+        private System.Windows.Forms.Label lb_menu;
+        private System.Windows.Forms.Button bt_alugar;
+        private System.Windows.Forms.Button bt_historico;
     }
 }
