@@ -56,8 +56,12 @@ namespace LocadoraCarros.Telinhas
 
         private void bt_concluir_Click(object sender, EventArgs e)
         {
+          
             Entidades.Cliente cliente = new Entidades.Cliente(txB_usuarioCad.Text, mk_cpf.Text, dt_nascimento.Value, mk_telefone.Text, txB_email.Text, txB_senha.Text);
             Adicionar(cliente);
+
+            Menuu m = new Menuu();
+            m.ShowDialog();
         }
     }
 }

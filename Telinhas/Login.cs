@@ -60,7 +60,7 @@ namespace LocadoraCarros
         public bool Entrar (string nome, string senha)
         {
             bool boole = true;
-            /*foreach (string a in Cadastrar.Adicionar())
+            foreach (string a in Cadastrar.clientes)
             {
                 if (nome.Equals(a))
                 {
@@ -73,7 +73,7 @@ namespace LocadoraCarros
                 {
                     boole = false;
                 }
-            }*/
+            }
             return boole;
         }
     }
