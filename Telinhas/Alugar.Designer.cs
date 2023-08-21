@@ -286,6 +286,7 @@
             this.Controls.Add(this.lb_alugar);
             this.Name = "Alugar";
             this.Text = "Alugar";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

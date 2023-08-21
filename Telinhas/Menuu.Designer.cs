@@ -122,7 +122,7 @@
             this.bt_historico.UseVisualStyleBackColor = true;
             this.bt_historico.Click += new System.EventHandler(this.bt_historico_Click);
             // 
-            // Menu
+            // Menuu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,8 @@
             this.Controls.Add(this.bt_alugar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_menu);
-            this.Name = "Menu";
+            this.Name = "Menuu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);
