@@ -128,10 +128,24 @@
             // 
             this.cB_marca.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cB_marca.FormattingEnabled = true;
+            this.cB_marca.Items.AddRange(new object[] {
+            "Chevrolet",
+            "",
+            "Fiat",
+            "",
+            "Ford",
+            "",
+            "Peugeot",
+            "",
+            "Reno",
+            "",
+            "Volkswagen"});
             this.cB_marca.Location = new System.Drawing.Point(107, 192);
             this.cB_marca.Name = "cB_marca";
             this.cB_marca.Size = new System.Drawing.Size(193, 26);
             this.cB_marca.TabIndex = 8;
+            this.cB_marca.SelectedIndexChanged += new System.EventHandler(this.cB_marca_SelectedIndexChanged);
+            this.cB_marca.SelectedValueChanged += new System.EventHandler(this.cB_marca_SelectedValueChanged);
             // 
             // cB_modelo
             // 
@@ -146,6 +160,13 @@
             // 
             this.cB_ano.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cB_ano.FormattingEnabled = true;
+            this.cB_ano.Items.AddRange(new object[] {
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2023",
+            "2024"});
             this.cB_ano.Location = new System.Drawing.Point(107, 324);
             this.cB_ano.Name = "cB_ano";
             this.cB_ano.Size = new System.Drawing.Size(193, 26);
@@ -155,6 +176,12 @@
             // 
             this.cB_cor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cB_cor.FormattingEnabled = true;
+            this.cB_cor.Items.AddRange(new object[] {
+            "Branco",
+            "Preto",
+            "Prata",
+            "Azul",
+            "Vermelho"});
             this.cB_cor.Location = new System.Drawing.Point(107, 393);
             this.cB_cor.Name = "cB_cor";
             this.cB_cor.Size = new System.Drawing.Size(193, 26);
@@ -171,6 +198,7 @@
             this.bt_concluir.TabIndex = 12;
             this.bt_concluir.Text = "Concluir";
             this.bt_concluir.UseVisualStyleBackColor = false;
+            this.bt_concluir.Click += new System.EventHandler(this.bt_concluir_Click);
             // 
             // bt_cancelar
             // 
@@ -285,7 +313,7 @@
             this.Controls.Add(this.lb_marca);
             this.Controls.Add(this.lb_alugar);
             this.Name = "Alugar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alugar";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

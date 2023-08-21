@@ -78,7 +78,6 @@
             this.txB_usuario.Name = "txB_usuario";
             this.txB_usuario.Size = new System.Drawing.Size(323, 26);
             this.txB_usuario.TabIndex = 3;
-            this.txB_usuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txB_senha
             // 
@@ -124,7 +123,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lb_usuarioLog);
             this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

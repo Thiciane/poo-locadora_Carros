@@ -110,6 +110,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 215);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pictureBox2
             // 
@@ -133,7 +134,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_historico);
             this.Name = "Historico";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historico";
             this.Load += new System.EventHandler(this.Historico_Load);
             this.panel1.ResumeLayout(false);

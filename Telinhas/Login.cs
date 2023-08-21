@@ -25,10 +25,6 @@ namespace LocadoraCarros
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void bt_cadastro_Click(object sender, EventArgs e)
         {
@@ -40,7 +36,7 @@ namespace LocadoraCarros
         {       
             if (Entrar(txB_usuario.Text, txB_senha.Text) != true)
             {
-                MessageBox.Show("senha incorreta");
+                MessageBox.Show("Opa! Senha ou usuário incorreto");
                 txB_usuario.Text = String.Empty;
                 txB_senha.Text = String.Empty;
             }

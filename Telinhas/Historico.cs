@@ -26,5 +26,15 @@ namespace LocadoraCarros.Telinhas
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Alugar alugar = new Alugar();
+            int index = dataGridView1.CurrentCell.RowIndex;
+            alugar.carros.RemoveAt(index);
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = alugar.carros;
+        }
     }
 }
