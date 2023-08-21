@@ -19,7 +19,9 @@ namespace LocadoraCarros.Telinhas
 
         private void Historico_Load(object sender, EventArgs e)
         {
+            Entidades.Cliente cliente = new Entidades.Cliente();
 
+            lb_usuarioHis.Text = cliente.Nome;
         }
 
         private void lb_usuarioHis_Click(object sender, EventArgs e)
@@ -35,6 +37,18 @@ namespace LocadoraCarros.Telinhas
             dataGridView1.DataSource = null;
             dataGridView1.Refresh();
             dataGridView1.DataSource = alugar.carros;
+        }
+
+        private void lb_sairHis_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Menuu menuu = new Menuu();
+            menuu.ShowDialog();
         }
     }
 }

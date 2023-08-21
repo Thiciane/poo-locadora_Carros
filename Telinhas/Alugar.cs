@@ -89,5 +89,18 @@ namespace LocadoraCarros.Telinhas
             carros.AddRange(carrosArray);
             MessageBox.Show("Carro alugado com sucesso!");
         }
+
+        private void lb_sairHis_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+        }
+
+        private void Alugar_Load(object sender, EventArgs e)
+        {
+            Entidades.Cliente cliente = new Entidades.Cliente();
+
+            lb_usuarioAlu.Text = cliente.Nome;
+        }
     }
 }

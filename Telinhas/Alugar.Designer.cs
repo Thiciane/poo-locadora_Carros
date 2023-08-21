@@ -46,7 +46,7 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_sairHis = new System.Windows.Forms.Label();
-            this.lb_usuarioHis = new System.Windows.Forms.Label();
+            this.lb_usuarioAlu = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_menu = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -234,7 +234,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.lb_sairHis);
-            this.panel1.Controls.Add(this.lb_usuarioHis);
+            this.panel1.Controls.Add(this.lb_usuarioAlu);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Location = new System.Drawing.Point(-1, 2);
@@ -253,18 +253,19 @@
             this.lb_sairHis.Size = new System.Drawing.Size(40, 18);
             this.lb_sairHis.TabIndex = 3;
             this.lb_sairHis.Text = "Sair";
+            this.lb_sairHis.Click += new System.EventHandler(this.lb_sairHis_Click);
             // 
-            // lb_usuarioHis
+            // lb_usuarioAlu
             // 
-            this.lb_usuarioHis.AutoSize = true;
-            this.lb_usuarioHis.BackColor = System.Drawing.Color.Transparent;
-            this.lb_usuarioHis.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_usuarioHis.ForeColor = System.Drawing.Color.White;
-            this.lb_usuarioHis.Location = new System.Drawing.Point(85, 12);
-            this.lb_usuarioHis.Name = "lb_usuarioHis";
-            this.lb_usuarioHis.Size = new System.Drawing.Size(70, 18);
-            this.lb_usuarioHis.TabIndex = 2;
-            this.lb_usuarioHis.Text = "Usuario";
+            this.lb_usuarioAlu.AutoSize = true;
+            this.lb_usuarioAlu.BackColor = System.Drawing.Color.Transparent;
+            this.lb_usuarioAlu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_usuarioAlu.ForeColor = System.Drawing.Color.White;
+            this.lb_usuarioAlu.Location = new System.Drawing.Point(85, 12);
+            this.lb_usuarioAlu.Name = "lb_usuarioAlu";
+            this.lb_usuarioAlu.Size = new System.Drawing.Size(70, 18);
+            this.lb_usuarioAlu.TabIndex = 2;
+            this.lb_usuarioAlu.Text = "Usuario";
             // 
             // pictureBox1
             // 
@@ -315,6 +316,7 @@
             this.Name = "Alugar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alugar";
+            this.Load += new System.EventHandler(this.Alugar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -342,7 +344,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb_sairHis;
-        private System.Windows.Forms.Label lb_usuarioHis;
+        private System.Windows.Forms.Label lb_usuarioAlu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lb_menu;
     }

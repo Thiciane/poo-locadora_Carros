@@ -78,6 +78,7 @@
             this.lb_sairHis.Size = new System.Drawing.Size(40, 18);
             this.lb_sairHis.TabIndex = 3;
             this.lb_sairHis.Text = "Sair";
+            this.lb_sairHis.Click += new System.EventHandler(this.lb_sairHis_Click);
             // 
             // lb_usuarioHis
             // 
@@ -122,6 +123,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Historico
             // 

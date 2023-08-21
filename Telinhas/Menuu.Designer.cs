@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_sairHis = new System.Windows.Forms.Label();
-            this.lb_usuarioHis = new System.Windows.Forms.Label();
+            this.lb_usuarioMen = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_menu = new System.Windows.Forms.Label();
             this.bt_alugar = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.lb_sairHis);
-            this.panel1.Controls.Add(this.lb_usuarioHis);
+            this.panel1.Controls.Add(this.lb_usuarioMen);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Location = new System.Drawing.Point(-1, 2);
@@ -63,18 +63,19 @@
             this.lb_sairHis.Size = new System.Drawing.Size(40, 18);
             this.lb_sairHis.TabIndex = 3;
             this.lb_sairHis.Text = "Sair";
+            this.lb_sairHis.Click += new System.EventHandler(this.lb_sairHis_Click);
             // 
-            // lb_usuarioHis
+            // lb_usuarioMen
             // 
-            this.lb_usuarioHis.AutoSize = true;
-            this.lb_usuarioHis.BackColor = System.Drawing.Color.Transparent;
-            this.lb_usuarioHis.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_usuarioHis.ForeColor = System.Drawing.Color.White;
-            this.lb_usuarioHis.Location = new System.Drawing.Point(85, 12);
-            this.lb_usuarioHis.Name = "lb_usuarioHis";
-            this.lb_usuarioHis.Size = new System.Drawing.Size(70, 18);
-            this.lb_usuarioHis.TabIndex = 2;
-            this.lb_usuarioHis.Text = "Usuario";
+            this.lb_usuarioMen.AutoSize = true;
+            this.lb_usuarioMen.BackColor = System.Drawing.Color.Transparent;
+            this.lb_usuarioMen.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_usuarioMen.ForeColor = System.Drawing.Color.White;
+            this.lb_usuarioMen.Location = new System.Drawing.Point(85, 12);
+            this.lb_usuarioMen.Name = "lb_usuarioMen";
+            this.lb_usuarioMen.Size = new System.Drawing.Size(70, 18);
+            this.lb_usuarioMen.TabIndex = 2;
+            this.lb_usuarioMen.Text = "Usuario";
             // 
             // pictureBox1
             // 
@@ -148,7 +149,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb_sairHis;
-        private System.Windows.Forms.Label lb_usuarioHis;
+        private System.Windows.Forms.Label lb_usuarioMen;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lb_menu;
         private System.Windows.Forms.Button bt_alugar;

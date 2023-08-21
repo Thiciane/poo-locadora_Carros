@@ -36,7 +36,14 @@ namespace LocadoraCarros.Telinhas
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            Entidades.Cliente cliente = new Entidades.Cliente();
+            lb_usuarioMen.Text = cliente.Nome;
+        }
 
+        private void lb_sairHis_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
         }
     }
 }
