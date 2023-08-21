@@ -133,7 +133,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_menu);
             this.Name = "Menuu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1.ResumeLayout(false);

@@ -37,7 +37,7 @@ namespace LocadoraCarros
         }
 
         private void bt_entrar_Click(object sender, EventArgs e)
-        {            
+        {       
             if (Entrar(txB_usuario.Text, txB_senha.Text) != true)
             {
                 MessageBox.Show("senha incorreta");
@@ -51,10 +51,11 @@ namespace LocadoraCarros
             }
             
         }
-        public bool Entrar (string nome, string senha)
+        public bool Entrar(string nome, string senha) //verifica o nome e a senha
         {
-            bool boole = true;
-            /*foreach (string a in Cadastrar)
+            Cadastrar cad = new Cadastrar();
+            bool boole = false;
+            foreach (string a in cad.clientes)
             {
                 if (nome.Equals(a))
                 {
@@ -67,8 +68,9 @@ namespace LocadoraCarros
                 {
                     boole = false;
                 }
-            }*/
+            }
             return boole;
         }
+
     }
 }

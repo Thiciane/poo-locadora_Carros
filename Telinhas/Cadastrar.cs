@@ -13,17 +13,24 @@ namespace LocadoraCarros.Telinhas
     public partial class Cadastrar : Form
     {
         public List<string> clientes = new List<string>();
-        
+
 
         public Cadastrar()
         {
             InitializeComponent();
         }
-        public void Adicionar(object a, object b)
+       /* public void Adicionar(object a, object b) //adiciona cliente
+        {
+            ///string nomeSenha = $"{a.ToString()} {b.ToString()}";
+            //clientes.Add(nomeSenha) ;
+            clientes.Add("thiciane");
+            clientes.Add(123.ToString());
+            clientes.Add(a.ToString());
+            clientes.Add(b.ToString());
+        }*/
+       public void Adicionar(object a) //adiciona cliente
         {
             clientes.Add(a.ToString());
-            clientes.Add("thiciane");
-            clientes.Add("nicoly");
         }
 
         private void Cadastrar_Load(object sender, EventArgs e)
@@ -35,7 +42,8 @@ namespace LocadoraCarros.Telinhas
           
             Entidades.Cliente cliente = new Entidades.Cliente(txB_usuarioCad.Text, mk_cpf.Text, dt_nascimento.Value, mk_telefone.Text, txB_email.Text, txB_senha.Text);
 
-            Adicionar(cliente.Nome, cliente.Senha);
+            //Adicionar(cliente.Nome, cliente.Senha);
+            Adicionar(cliente);
             /*foreach(string a in clientes)
             {
                 MessageBox.Show(a);
@@ -43,12 +51,10 @@ namespace LocadoraCarros.Telinhas
 
             foreach (string a in clientes)
             {
-                if (cliente.Nome.Equals(a))
+                if (Object.Equals(a, cliente))
                 {
-                    if (cliente.Senha.Equals(a))
-                    {
-                        MessageBox.Show("Opa! parece que você já tem cadastro.");
-                    }
+                    MessageBox.Show("Opa! parece que você já tem cadastro.");
+
                 }
                 else
                 {

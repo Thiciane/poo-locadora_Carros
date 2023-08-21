@@ -133,7 +133,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_historico);
             this.Name = "Historico";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Historico";
             this.Load += new System.EventHandler(this.Historico_Load);
             this.panel1.ResumeLayout(false);

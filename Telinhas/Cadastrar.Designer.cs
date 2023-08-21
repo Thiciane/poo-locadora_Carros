@@ -199,6 +199,7 @@
             this.Controls.Add(this.lb_cpf);
             this.Controls.Add(this.lb_nome);
             this.Name = "Cadastrar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastrar";
             this.Load += new System.EventHandler(this.Cadastrar_Load);
             this.ResumeLayout(false);
