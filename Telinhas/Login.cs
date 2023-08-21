@@ -18,12 +18,6 @@ namespace LocadoraCarros
         public Login()
         {
             InitializeComponent();
-            pictureBox1.Anchor = AnchorStyles.Right | AnchorStyles.Left;
-            lb_usuarioLog.Anchor = AnchorStyles.Right | AnchorStyles.Left;
-            lb_senha.Anchor = AnchorStyles.Right | AnchorStyles.Left;
-            txB_senha.Anchor = AnchorStyles.Right | AnchorStyles.Left;
-            txB_usuario.Anchor = AnchorStyles.Right | AnchorStyles.Left;
-
         }
 
         private void Login_Load(object sender, EventArgs e)

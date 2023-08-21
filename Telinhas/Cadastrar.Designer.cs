@@ -117,7 +117,6 @@
             this.lb_nome.Size = new System.Drawing.Size(59, 18);
             this.lb_nome.TabIndex = 20;
             this.lb_nome.Text = "Nome:";
-            this.lb_nome.Click += new System.EventHandler(this.lb_marca_Click);
             // 
             // lb_email
             // 
@@ -128,7 +127,6 @@
             this.lb_email.Size = new System.Drawing.Size(56, 18);
             this.lb_email.TabIndex = 35;
             this.lb_email.Text = "Email:";
-            this.lb_email.Click += new System.EventHandler(this.label2_Click);
             // 
             // mk_cpf
             // 
@@ -145,7 +143,6 @@
             this.txB_usuarioCad.Name = "txB_usuarioCad";
             this.txB_usuarioCad.Size = new System.Drawing.Size(244, 26);
             this.txB_usuarioCad.TabIndex = 38;
-            this.txB_usuarioCad.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txB_email
             // 
@@ -170,7 +167,6 @@
             this.txB_senha.Name = "txB_senha";
             this.txB_senha.Size = new System.Drawing.Size(244, 26);
             this.txB_senha.TabIndex = 42;
-            this.txB_senha.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // lb_senha
             // 
@@ -181,7 +177,6 @@
             this.lb_senha.Size = new System.Drawing.Size(64, 18);
             this.lb_senha.TabIndex = 41;
             this.lb_senha.Text = "Senha:";
-            this.lb_senha.Click += new System.EventHandler(this.label1_Click);
             // 
             // Cadastrar
             // 
