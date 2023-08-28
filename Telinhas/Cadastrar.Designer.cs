@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lb_menu = new System.Windows.Forms.Label();
-            this.dt_nascimento = new System.Windows.Forms.DateTimePicker();
             this.bt_concluir = new System.Windows.Forms.Button();
             this.lb_nascimento = new System.Windows.Forms.Label();
             this.lb_telefone = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.mk_telefone = new System.Windows.Forms.MaskedTextBox();
             this.txB_senha = new System.Windows.Forms.TextBox();
             this.lb_senha = new System.Windows.Forms.Label();
+            this.dt_nascimento = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lb_menu
@@ -56,14 +56,6 @@
             this.lb_menu.Size = new System.Drawing.Size(136, 32);
             this.lb_menu.TabIndex = 34;
             this.lb_menu.Text = "Cadastro";
-            // 
-            // dt_nascimento
-            // 
-            this.dt_nascimento.CalendarFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_nascimento.Location = new System.Drawing.Point(239, 191);
-            this.dt_nascimento.Name = "dt_nascimento";
-            this.dt_nascimento.Size = new System.Drawing.Size(281, 20);
-            this.dt_nascimento.TabIndex = 32;
             // 
             // bt_concluir
             // 
@@ -178,6 +170,17 @@
             this.lb_senha.TabIndex = 41;
             this.lb_senha.Text = "Senha:";
             // 
+            // dt_nascimento
+            // 
+            this.dt_nascimento.CalendarFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_nascimento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_nascimento.Location = new System.Drawing.Point(239, 185);
+            this.dt_nascimento.MaxDate = new System.DateTime(2023, 8, 25, 23, 59, 59, 0);
+            this.dt_nascimento.MinDate = new System.DateTime(1933, 1, 20, 0, 0, 0, 0);
+            this.dt_nascimento.Name = "dt_nascimento";
+            this.dt_nascimento.Size = new System.Drawing.Size(356, 26);
+            this.dt_nascimento.TabIndex = 32;
+            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,7 +212,6 @@
 
         #endregion
         private System.Windows.Forms.Label lb_menu;
-        private System.Windows.Forms.DateTimePicker dt_nascimento;
         private System.Windows.Forms.Button bt_concluir;
         private System.Windows.Forms.Label lb_nascimento;
         private System.Windows.Forms.Label lb_telefone;
@@ -222,5 +224,6 @@
         private System.Windows.Forms.MaskedTextBox mk_telefone;
         private System.Windows.Forms.TextBox txB_senha;
         private System.Windows.Forms.Label lb_senha;
+        private System.Windows.Forms.DateTimePicker dt_nascimento;
     }
 }

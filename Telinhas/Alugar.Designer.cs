@@ -42,13 +42,13 @@
             this.cB_cor = new System.Windows.Forms.ComboBox();
             this.bt_concluir = new System.Windows.Forms.Button();
             this.bt_cancelar = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_sairHis = new System.Windows.Forms.Label();
             this.lb_usuarioAlu = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_menu = new System.Windows.Forms.Label();
+            this.dt_nascimento = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +77,7 @@
             // 
             this.lb_retirada.AutoSize = true;
             this.lb_retirada.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_retirada.Location = new System.Drawing.Point(420, 200);
+            this.lb_retirada.Location = new System.Drawing.Point(322, 195);
             this.lb_retirada.Name = "lb_retirada";
             this.lb_retirada.Size = new System.Drawing.Size(82, 18);
             this.lb_retirada.TabIndex = 2;
@@ -117,7 +117,7 @@
             // 
             this.lb_devolucao.AutoSize = true;
             this.lb_devolucao.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_devolucao.Location = new System.Drawing.Point(404, 264);
+            this.lb_devolucao.Location = new System.Drawing.Point(306, 262);
             this.lb_devolucao.Name = "lb_devolucao";
             this.lb_devolucao.Size = new System.Drawing.Size(98, 18);
             this.lb_devolucao.TabIndex = 7;
@@ -130,15 +130,10 @@
             this.cB_marca.FormattingEnabled = true;
             this.cB_marca.Items.AddRange(new object[] {
             "Chevrolet",
-            "",
             "Fiat",
-            "",
             "Ford",
-            "",
             "Peugeot",
-            "",
             "Reno",
-            "",
             "Volkswagen"});
             this.cB_marca.Location = new System.Drawing.Point(107, 192);
             this.cB_marca.Name = "cB_marca";
@@ -192,7 +187,7 @@
             this.bt_concluir.BackColor = System.Drawing.Color.White;
             this.bt_concluir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_concluir.ForeColor = System.Drawing.Color.Black;
-            this.bt_concluir.Location = new System.Drawing.Point(448, 380);
+            this.bt_concluir.Location = new System.Drawing.Point(439, 355);
             this.bt_concluir.Name = "bt_concluir";
             this.bt_concluir.Size = new System.Drawing.Size(110, 34);
             this.bt_concluir.TabIndex = 12;
@@ -205,30 +200,13 @@
             this.bt_cancelar.BackColor = System.Drawing.Color.White;
             this.bt_cancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cancelar.ForeColor = System.Drawing.Color.Black;
-            this.bt_cancelar.Location = new System.Drawing.Point(639, 380);
+            this.bt_cancelar.Location = new System.Drawing.Point(630, 355);
             this.bt_cancelar.Name = "bt_cancelar";
             this.bt_cancelar.Size = new System.Drawing.Size(110, 34);
             this.bt_cancelar.TabIndex = 13;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = false;
             this.bt_cancelar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(508, 198);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(230, 20);
-            this.dateTimePicker1.TabIndex = 14;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(508, 265);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(230, 20);
-            this.dateTimePicker2.TabIndex = 15;
             // 
             // panel1
             // 
@@ -290,16 +268,39 @@
             this.lb_menu.TabIndex = 17;
             this.lb_menu.Text = "Menu";
             // 
+            // dt_nascimento
+            // 
+            this.dt_nascimento.CalendarFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_nascimento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_nascimento.Location = new System.Drawing.Point(410, 259);
+            this.dt_nascimento.MaxDate = new System.DateTime(2024, 1, 1, 0, 0, 0, 0);
+            this.dt_nascimento.MinDate = new System.DateTime(2023, 8, 21, 0, 0, 0, 0);
+            this.dt_nascimento.Name = "dt_nascimento";
+            this.dt_nascimento.Size = new System.Drawing.Size(356, 26);
+            this.dt_nascimento.TabIndex = 33;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker3.Location = new System.Drawing.Point(410, 192);
+            this.dateTimePicker3.MaxDate = new System.DateTime(2023, 11, 30, 0, 0, 0, 0);
+            this.dateTimePicker3.MinDate = new System.DateTime(2023, 8, 21, 0, 0, 0, 0);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(356, 26);
+            this.dateTimePicker3.TabIndex = 34;
+            this.dateTimePicker3.Value = new System.DateTime(2023, 8, 21, 0, 0, 0, 0);
+            // 
             // Alugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.dt_nascimento);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_menu);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.bt_cancelar);
             this.Controls.Add(this.bt_concluir);
             this.Controls.Add(this.cB_cor);
@@ -340,12 +341,12 @@
         private System.Windows.Forms.ComboBox cB_cor;
         private System.Windows.Forms.Button bt_concluir;
         private System.Windows.Forms.Button bt_cancelar;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb_sairHis;
         private System.Windows.Forms.Label lb_usuarioAlu;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lb_menu;
+        private System.Windows.Forms.DateTimePicker dt_nascimento;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }

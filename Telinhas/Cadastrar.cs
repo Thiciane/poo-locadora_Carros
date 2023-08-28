@@ -14,6 +14,8 @@ namespace LocadoraCarros.Telinhas
     {
         public List<string> clientes = new List<string>();
         string[] Thici = { "thiciane", "1234", "20/06/2006", "(69) 99246-9166", "thici.com", "123" };
+
+       
         
 
 
@@ -24,7 +26,7 @@ namespace LocadoraCarros.Telinhas
 
        public void Adicionar(object a) //adiciona cliente
         {
-            //clientes.Add(Thici);
+            clientes.AddRange(Thici);
             clientes.Add(a.ToString());
         }
 

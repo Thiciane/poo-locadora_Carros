@@ -37,6 +37,7 @@ namespace LocadoraCarros
             if (Entrar(txB_usuario.Text, txB_senha.Text) != true)
             {
                 MessageBox.Show("Opa! Senha ou usuário incorreto");
+                
                 txB_usuario.Text = String.Empty;
                 txB_senha.Text = String.Empty;
             }
@@ -53,12 +54,10 @@ namespace LocadoraCarros
             bool boole = false;
             foreach (string a in cad.clientes)
             {
-                if (nome.Equals(a))
+                MessageBox.Show(cad.clientes.ToString());
+                if (object.Equals(a, cad.clientes))
                 {
-                    if (senha.Equals(a))
-                    {
-                        boole = true;
-                    }
+                    boole = true;
                 }
                 else
                 {
